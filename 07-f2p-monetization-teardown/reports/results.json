@@ -1,0 +1,226 @@
+{
+  "offers": [
+    {
+      "offer": "Welkin Moon ($4.99, 30 days)",
+      "type": "subscription",
+      "price": 4.99,
+      "primos": 3000,
+      "wishes": 18.75,
+      "usd_per_wish": 0.266
+    },
+    {
+      "offer": "Gnostic Hymn battle pass ($9.99)",
+      "type": "battle pass",
+      "price": 9.99,
+      "primos": 1320,
+      "wishes": 8.25,
+      "usd_per_wish": 1.211
+    },
+    {
+      "offer": "$29.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 29.99,
+      "primos": 3960,
+      "wishes": 24.75,
+      "usd_per_wish": 1.212
+    },
+    {
+      "offer": "$49.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 49.99,
+      "primos": 6560,
+      "wishes": 41.0,
+      "usd_per_wish": 1.219
+    },
+    {
+      "offer": "$14.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 14.99,
+      "primos": 1960,
+      "wishes": 12.25,
+      "usd_per_wish": 1.224
+    },
+    {
+      "offer": "$99.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 99.99,
+      "primos": 12960,
+      "wishes": 81.0,
+      "usd_per_wish": 1.234
+    },
+    {
+      "offer": "$0.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 0.99,
+      "primos": 120,
+      "wishes": 0.75,
+      "usd_per_wish": 1.32
+    },
+    {
+      "offer": "$4.99 top-up (first-time \u00d72)",
+      "type": "first-time",
+      "price": 4.99,
+      "primos": 600,
+      "wishes": 3.75,
+      "usd_per_wish": 1.331
+    },
+    {
+      "offer": "$99.99 top-up",
+      "type": "top-up",
+      "price": 99.99,
+      "primos": 8080,
+      "wishes": 50.5,
+      "usd_per_wish": 1.98
+    },
+    {
+      "offer": "$49.99 top-up",
+      "type": "top-up",
+      "price": 49.99,
+      "primos": 3880,
+      "wishes": 24.25,
+      "usd_per_wish": 2.061
+    },
+    {
+      "offer": "$29.99 top-up",
+      "type": "top-up",
+      "price": 29.99,
+      "primos": 2240,
+      "wishes": 14.0,
+      "usd_per_wish": 2.142
+    },
+    {
+      "offer": "$14.99 top-up",
+      "type": "top-up",
+      "price": 14.99,
+      "primos": 1090,
+      "wishes": 6.812,
+      "usd_per_wish": 2.2
+    },
+    {
+      "offer": "$4.99 top-up",
+      "type": "top-up",
+      "price": 4.99,
+      "primos": 330,
+      "wishes": 2.062,
+      "usd_per_wish": 2.419
+    },
+    {
+      "offer": "$0.99 top-up",
+      "type": "top-up",
+      "price": 0.99,
+      "primos": 60,
+      "wishes": 0.375,
+      "usd_per_wish": 2.64
+    }
+  ],
+  "tiers": [
+    {
+      "tier": "F2P",
+      "wishes_per_version": 57.625,
+      "usd_per_version": 0.0,
+      "featured_per_year_expected": 5.544,
+      "usd_per_year": 0.0
+    },
+    {
+      "tier": "Welkin",
+      "wishes_per_version": 81.25,
+      "usd_per_version": 6.986,
+      "featured_per_year_expected": 7.817,
+      "usd_per_year": 60.712
+    },
+    {
+      "tier": "Welkin + BP",
+      "wishes_per_version": 89.5,
+      "usd_per_version": 16.976,
+      "featured_per_year_expected": 8.611,
+      "usd_per_year": 147.53
+    }
+  ],
+  "mean_wishes_per_featured": {
+    "50/50": 93.44599805941935,
+    "with_capturing_radiance_approx": 90.33113145744053
+  },
+  "constellation_cost": [
+    {
+      "copies": 1,
+      "label": "C0",
+      "mean_wishes": 90.33,
+      "p90": 155,
+      "mean_usd": 178.86,
+      "p90_usd": 306.9,
+      "p10_usd": 61.38
+    },
+    {
+      "copies": 2,
+      "label": "C1",
+      "mean_wishes": 180.66,
+      "p90": 253,
+      "mean_usd": 357.71,
+      "p90_usd": 500.94,
+      "p10_usd": 198.0
+    },
+    {
+      "copies": 3,
+      "label": "C2",
+      "mean_wishes": 270.99,
+      "p90": 373,
+      "mean_usd": 536.57,
+      "p90_usd": 738.54,
+      "p10_usd": 346.5
+    },
+    {
+      "copies": 4,
+      "label": "C3",
+      "mean_wishes": 361.32,
+      "p90": 470,
+      "mean_usd": 715.42,
+      "p90_usd": 930.6,
+      "p10_usd": 496.98
+    },
+    {
+      "copies": 5,
+      "label": "C4",
+      "mean_wishes": 451.66,
+      "p90": 575,
+      "mean_usd": 894.28,
+      "p90_usd": 1138.5,
+      "p10_usd": 651.42
+    },
+    {
+      "copies": 6,
+      "label": "C5",
+      "mean_wishes": 541.99,
+      "p90": 678,
+      "mean_usd": 1073.13,
+      "p90_usd": 1342.44,
+      "p10_usd": 807.84
+    },
+    {
+      "copies": 7,
+      "label": "C6",
+      "mean_wishes": 632.32,
+      "p90": 778,
+      "mean_usd": 1251.99,
+      "p90_usd": 1540.44,
+      "p10_usd": 966.24
+    }
+  ],
+  "archetypes": [
+    {
+      "archetype": "Welkin only",
+      "usd_per_month": 4.99
+    },
+    {
+      "archetype": "Welkin + BP",
+      "usd_per_month": 12.13
+    },
+    {
+      "archetype": "Dolphin: + 1 featured / version gap",
+      "usd_per_month": 13.3
+    },
+    {
+      "archetype": "Whale: C6 of every 2nd banner",
+      "usd_per_month": 779.83
+    }
+  ]
+}

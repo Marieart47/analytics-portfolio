@@ -1,0 +1,267 @@
+{
+  "win_rates": {
+    "v1": {
+      "Builder": 0.363,
+      "Merchant": 0.339,
+      "Taxman": 0.185,
+      "Warlord": 0.714,
+      "Zealot": 0.065
+    },
+    "v2": {
+      "Builder": 0.304,
+      "Merchant": 0.232,
+      "Taxman": 0.411,
+      "Warlord": 0.31,
+      "Zealot": 0.411
+    },
+    "v1_city": {
+      "Riverhold": 0.143,
+      "Stonepeak": 0.632,
+      "Weaver's Ford": 0.225
+    },
+    "v2_city": {
+      "Riverhold": 0.346,
+      "Stonepeak": 0.357,
+      "Weaver's Ford": 0.296
+    },
+    "games_per_version": 280
+  },
+  "outcomes": {
+    "v1": {
+      "pop": {
+        "Builder": 3186.6,
+        "Merchant": 3286.6,
+        "Taxman": 2765.32,
+        "Warlord": 3145.13,
+        "Zealot": 3669.97
+      },
+      "gold": {
+        "Builder": 248027.75,
+        "Merchant": 235293.56,
+        "Taxman": 154604.16,
+        "Warlord": 379222.15,
+        "Zealot": 82510.78
+      },
+      "stability": {
+        "Builder": 0.79,
+        "Merchant": 0.83,
+        "Taxman": 0.58,
+        "Warlord": 0.77,
+        "Zealot": 1.0
+      }
+    },
+    "v2": {
+      "pop": {
+        "Builder": 2765.59,
+        "Merchant": 2812.61,
+        "Taxman": 2510.26,
+        "Warlord": 1587.1,
+        "Zealot": 2913.8
+      },
+      "gold": {
+        "Builder": 1775.59,
+        "Merchant": 1381.98,
+        "Taxman": 3851.28,
+        "Warlord": 2383.12,
+        "Zealot": 2011.65
+      },
+      "stability": {
+        "Builder": 0.76,
+        "Merchant": 0.84,
+        "Taxman": 0.41,
+        "Warlord": 0.33,
+        "Zealot": 1.0
+      }
+    }
+  },
+  "money_growth_10y": {
+    "v1": 421.33976397351375,
+    "v2": 4.05573922956008
+  },
+  "flows_per_month": {
+    "v1": {
+      "taxes": 474.5,
+      "sales": 18753.4,
+      "purchases": 3357.5,
+      "upkeep": 560.3,
+      "construction": 9815.1,
+      "recruitment": 9.3,
+      "bandits": 0.0,
+      "loot_transfer": 829.6
+    },
+    "v2": {
+      "taxes": 384.8,
+      "sales": 392.2,
+      "purchases": 70.7,
+      "upkeep": 213.5,
+      "construction": 306.4,
+      "recruitment": 39.3,
+      "bandits": 102.6,
+      "loot_transfer": 95.6
+    }
+  },
+  "exploit": {
+    "v1_workshops": 121,
+    "v2_workshops": 2,
+    "weapon_margin_v1": 2.3999999999999995,
+    "weapon_margin_v2_no_impact": -0.5040000000000004
+  },
+  "tax_sweep": [
+    {
+      "tax": 0.05,
+      "score": 4645.209,
+      "pop": 2822.998,
+      "stability": 0.843,
+      "win": 0.0
+    },
+    {
+      "tax": 0.1,
+      "score": 4920.383,
+      "pop": 2822.998,
+      "stability": 0.843,
+      "win": 0.083
+    },
+    {
+      "tax": 0.15,
+      "score": 5107.751,
+      "pop": 2822.998,
+      "stability": 0.843,
+      "win": 0.083
+    },
+    {
+      "tax": 0.2,
+      "score": 5241.227,
+      "pop": 2744.116,
+      "stability": 0.724,
+      "win": 0.333
+    },
+    {
+      "tax": 0.25,
+      "score": 5274.799,
+      "pop": 2667.42,
+      "stability": 0.605,
+      "win": 0.333
+    },
+    {
+      "tax": 0.3,
+      "score": 5208.752,
+      "pop": 2592.849,
+      "stability": 0.486,
+      "win": 0.083
+    },
+    {
+      "tax": 0.35,
+      "score": 5174.892,
+      "pop": 2520.347,
+      "stability": 0.367,
+      "win": 0.167
+    },
+    {
+      "tax": 0.4,
+      "score": 5102.105,
+      "pop": 2449.855,
+      "stability": 0.247,
+      "win": 0.083
+    },
+    {
+      "tax": 0.45,
+      "score": 5046.853,
+      "pop": 2381.318,
+      "stability": 0.128,
+      "win": 0.083
+    }
+  ],
+  "best_tax": 0.25,
+  "balance_grid": [
+    {
+      "temple_upkeep": 3.0,
+      "tax_penalty": 1.5,
+      "max_dev": 0.16666666666666669,
+      "Builder": 0.19,
+      "Merchant": 0.25,
+      "Taxman": 0.5,
+      "Warlord": 0.357,
+      "Zealot": 0.369
+    },
+    {
+      "temple_upkeep": 3.0,
+      "tax_penalty": 2.5,
+      "max_dev": 0.08333333333333337,
+      "Builder": 0.286,
+      "Merchant": 0.25,
+      "Taxman": 0.393,
+      "Warlord": 0.321,
+      "Zealot": 0.417
+    },
+    {
+      "temple_upkeep": 3.0,
+      "tax_penalty": 3.5,
+      "max_dev": 0.15476190476190477,
+      "Builder": 0.25,
+      "Merchant": 0.286,
+      "Taxman": 0.298,
+      "Warlord": 0.345,
+      "Zealot": 0.488
+    },
+    {
+      "temple_upkeep": 4.5,
+      "tax_penalty": 1.5,
+      "max_dev": 0.16666666666666669,
+      "Builder": 0.19,
+      "Merchant": 0.214,
+      "Taxman": 0.5,
+      "Warlord": 0.357,
+      "Zealot": 0.405
+    },
+    {
+      "temple_upkeep": 4.5,
+      "tax_penalty": 2.5,
+      "max_dev": 0.130952380952381,
+      "Builder": 0.286,
+      "Merchant": 0.214,
+      "Taxman": 0.393,
+      "Warlord": 0.31,
+      "Zealot": 0.464
+    },
+    {
+      "temple_upkeep": 4.5,
+      "tax_penalty": 3.5,
+      "max_dev": 0.14285714285714285,
+      "Builder": 0.262,
+      "Merchant": 0.274,
+      "Taxman": 0.321,
+      "Warlord": 0.333,
+      "Zealot": 0.476
+    },
+    {
+      "temple_upkeep": 6.0,
+      "tax_penalty": 1.5,
+      "max_dev": 0.16666666666666669,
+      "Builder": 0.214,
+      "Merchant": 0.25,
+      "Taxman": 0.5,
+      "Warlord": 0.357,
+      "Zealot": 0.345
+    },
+    {
+      "temple_upkeep": 6.0,
+      "tax_penalty": 2.5,
+      "max_dev": 0.08333333333333337,
+      "Builder": 0.321,
+      "Merchant": 0.25,
+      "Taxman": 0.417,
+      "Warlord": 0.31,
+      "Zealot": 0.369
+    },
+    {
+      "temple_upkeep": 6.0,
+      "tax_penalty": 3.5,
+      "max_dev": 0.09523809523809523,
+      "Builder": 0.298,
+      "Merchant": 0.298,
+      "Taxman": 0.298,
+      "Warlord": 0.345,
+      "Zealot": 0.429
+    }
+  ]
+}

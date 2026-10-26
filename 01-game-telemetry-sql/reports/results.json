@@ -1,0 +1,96 @@
+{
+  "retention": {
+    "D1": 0.3843,
+    "D7": 0.197,
+    "D30": 0.0868,
+    "D90": 0.0365
+  },
+  "tutorial_completion": 0.7225,
+  "net_d90_roas": {
+    "influencer": 0.741,
+    "paid_search": 1.672,
+    "paid_social": 0.452
+  },
+  "gross_arpu_d90": 5.664,
+  "top10pct_payers_revenue_share": 0.664,
+  "payer_tiers": [
+    {
+      "tier": "1_minnow (<$10)",
+      "payers": 1269,
+      "share_of_payers": 0.3628,
+      "revenue": 6933.65,
+      "share_of_revenue": 0.0159,
+      "avg_ltv": 5.4639
+    },
+    {
+      "tier": "2_dolphin ($10-100)",
+      "payers": 1385,
+      "share_of_payers": 0.3959,
+      "revenue": 56008.61,
+      "share_of_revenue": 0.1285,
+      "avg_ltv": 40.4394
+    },
+    {
+      "tier": "3_whale ($100+)",
+      "payers": 844,
+      "share_of_payers": 0.2413,
+      "revenue": 372786.5,
+      "share_of_revenue": 0.8555,
+      "avg_ltv": 441.6902
+    }
+  ],
+  "players": 60000,
+  "payer_conversion_lifetime": 0.0583,
+  "dq": [
+    {
+      "check": "duplicate transaction ids",
+      "clean_data": 0,
+      "defect_injected_data": 82
+    },
+    {
+      "check": "duplicated purchase rows (same player, day, sku, price) beyond a plausible repeat rate",
+      "clean_data": 0,
+      "defect_injected_data": 0
+    },
+    {
+      "check": "purchases before install",
+      "clean_data": 0,
+      "defect_injected_data": 200
+    },
+    {
+      "check": "activity before install",
+      "clean_data": 0,
+      "defect_injected_data": 0
+    },
+    {
+      "check": "orphan events (player not in installs table)",
+      "clean_data": 0,
+      "defect_injected_data": 150
+    },
+    {
+      "check": "purchases on days without a session",
+      "clean_data": 0,
+      "defect_injected_data": 200
+    },
+    {
+      "check": "non-positive or unknown price points",
+      "clean_data": 0,
+      "defect_injected_data": 50
+    },
+    {
+      "check": "installs missing from tutorial_start",
+      "clean_data": 0,
+      "defect_injected_data": 180
+    },
+    {
+      "check": "funnel monotonicity violations (later step without earlier step)",
+      "clean_data": 0,
+      "defect_injected_data": 165
+    },
+    {
+      "check": "implausible session counts (> 50 per day)",
+      "clean_data": 0,
+      "defect_injected_data": 0
+    }
+  ]
+}

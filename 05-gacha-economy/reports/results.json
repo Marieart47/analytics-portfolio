@@ -1,0 +1,227 @@
+{
+  "usd_per_pull": 2.0,
+  "distributions": [
+    {
+      "design": "Baseline",
+      "description": "Baseline: soft pity 74, hard 90, 50/50 + guarantee",
+      "mean": 93.446,
+      "sd": 43.091,
+      "median": 80,
+      "p90": 155,
+      "p99": 161,
+      "worst_case": 180.0,
+      "p_over_150": 0.2,
+      "mc_mean": 93.568,
+      "mc_p90": 155.0,
+      "mean_cost_usd": 186.892,
+      "p99_cost_usd": 322.0
+    },
+    {
+      "design": "No pity",
+      "description": "No pity, flat rate (same mean)",
+      "mean": 93.446,
+      "sd": 81.843,
+      "median": 72,
+      "p90": 203,
+      "p99": 371,
+      "worst_case": "unbounded",
+      "p_over_150": 0.196,
+      "mc_mean": 93.068,
+      "mc_p90": 202.0,
+      "mean_cost_usd": 186.892,
+      "p99_cost_usd": 742.0
+    },
+    {
+      "design": "Hard pity only",
+      "description": "Hard pity 90 only, no soft pity",
+      "mean": 104.55,
+      "sd": 49.917,
+      "median": 90,
+      "p90": 180,
+      "p99": 180,
+      "worst_case": 180.0,
+      "p_over_150": 0.239,
+      "mc_mean": 104.699,
+      "mc_p90": 180.0,
+      "mean_cost_usd": 209.099,
+      "p99_cost_usd": 360.0
+    },
+    {
+      "design": "Generous",
+      "description": "Generous: soft 64, hard 80",
+      "mean": 83.735,
+      "sd": 37.425,
+      "median": 71,
+      "p90": 136,
+      "p99": 141,
+      "worst_case": 160.0,
+      "p_over_150": 0.0,
+      "mc_mean": 83.702,
+      "mc_p90": 136.0,
+      "mean_cost_usd": 167.47,
+      "p99_cost_usd": 282.0
+    },
+    {
+      "design": "Spark 150",
+      "description": "Baseline + spark at 150 pulls",
+      "mean": 92.303,
+      "sd": 41.447,
+      "median": 80,
+      "p90": 150,
+      "p99": 150,
+      "worst_case": 150.0,
+      "p_over_150": 0.0,
+      "mc_mean": 92.13,
+      "mc_p90": 150.0,
+      "mean_cost_usd": 184.606,
+      "p99_cost_usd": 300.0
+    }
+  ],
+  "baseline_first5_mean": 62.29733203963096,
+  "share_first5_in_soft_pity": 0.6444749789570152,
+  "consolidated_rate": 0.01605205178552176,
+  "economics": [
+    {
+      "design": "Baseline",
+      "revenue_per_player": 11.1868,
+      "success_all": 0.3916,
+      "success_f2p": 0.3068,
+      "success_payers": 0.6468,
+      "regret_share_payers": 0.1579,
+      "spend_whales": 73.5731,
+      "spend_dolphins": 37.6813,
+      "revenue_vs_baseline": 0.0,
+      "lifetime_adjusted_revenue": 90.9836,
+      "lifetime_vs_baseline": 0.0
+    },
+    {
+      "design": "No pity",
+      "revenue_per_player": 10.4766,
+      "success_all": 0.5139,
+      "success_f2p": 0.4551,
+      "success_payers": 0.6909,
+      "regret_share_payers": 0.1548,
+      "spend_whales": 83.1028,
+      "spend_dolphins": 31.7363,
+      "revenue_vs_baseline": -0.0635,
+      "lifetime_adjusted_revenue": 90.0373,
+      "lifetime_vs_baseline": -0.0104
+    },
+    {
+      "design": "Hard pity only",
+      "revenue_per_player": 13.0984,
+      "success_all": 0.3465,
+      "success_f2p": 0.2657,
+      "success_payers": 0.5897,
+      "regret_share_payers": 0.1951,
+      "spend_whales": 91.6322,
+      "spend_dolphins": 42.7472,
+      "revenue_vs_baseline": 0.1709,
+      "lifetime_adjusted_revenue": 92.4835,
+      "lifetime_vs_baseline": 0.0165
+    },
+    {
+      "design": "Generous",
+      "revenue_per_player": 9.4045,
+      "success_all": 0.442,
+      "success_f2p": 0.3555,
+      "success_payers": 0.7026,
+      "regret_share_payers": 0.1245,
+      "spend_whales": 58.2739,
+      "spend_dolphins": 32.5725,
+      "revenue_vs_baseline": -0.1593,
+      "lifetime_adjusted_revenue": 89.5412,
+      "lifetime_vs_baseline": -0.0159
+    },
+    {
+      "design": "Spark 150",
+      "revenue_per_player": 11.0297,
+      "success_all": 0.3932,
+      "success_f2p": 0.3078,
+      "success_payers": 0.6503,
+      "regret_share_payers": 0.155,
+      "spend_whales": 71.5798,
+      "spend_dolphins": 37.3919,
+      "revenue_vs_baseline": -0.0141,
+      "lifetime_adjusted_revenue": 90.8686,
+      "lifetime_vs_baseline": -0.0013
+    }
+  ],
+  "sensitivity": [
+    {
+      "churn_after_regret": 0.1,
+      "Baseline": 0.0,
+      "No pity": -0.0079,
+      "Hard pity only": 0.0204,
+      "Generous": -0.019,
+      "Spark 150": -0.0017
+    },
+    {
+      "churn_after_regret": 0.2,
+      "Baseline": 0.0,
+      "No pity": -0.0089,
+      "Hard pity only": 0.0188,
+      "Generous": -0.0178,
+      "Spark 150": -0.0015
+    },
+    {
+      "churn_after_regret": 0.35,
+      "Baseline": 0.0,
+      "No pity": -0.0104,
+      "Hard pity only": 0.0165,
+      "Generous": -0.0159,
+      "Spark 150": -0.0013
+    },
+    {
+      "churn_after_regret": 0.5,
+      "Baseline": 0.0,
+      "No pity": -0.0119,
+      "Hard pity only": 0.0141,
+      "Generous": -0.0139,
+      "Spark 150": -0.001
+    },
+    {
+      "churn_after_regret": 0.7,
+      "Baseline": 0.0,
+      "No pity": -0.014,
+      "Hard pity only": 0.0108,
+      "Generous": -0.0112,
+      "Spark 150": -0.0007
+    },
+    {
+      "churn_after_regret": 0.9,
+      "Baseline": 0.0,
+      "No pity": -0.0162,
+      "Hard pity only": 0.0075,
+      "Generous": -0.0085,
+      "Spark 150": -0.0003
+    }
+  ],
+  "f2p": {
+    "Baseline": {
+      "p_featured_with_1_patch": 0.11904407193216114,
+      "p_featured_with_2_patches": 0.5102576639138188,
+      "p_featured_with_3_patches": 0.7049892989044209
+    },
+    "No pity": {
+      "p_featured_with_1_patch": 0.305743908498723,
+      "p_featured_with_2_patches": 0.5471791761597171,
+      "p_featured_with_3_patches": 0.7161658743918224
+    },
+    "Hard pity only": {
+      "p_featured_with_1_patch": 0.11904407193216114,
+      "p_featured_with_2_patches": 0.23292200028081053,
+      "p_featured_with_3_patches": 0.6691977826333075
+    },
+    "Generous": {
+      "p_featured_with_1_patch": 0.11904407193216114,
+      "p_featured_with_2_patches": 0.5873995433170877,
+      "p_featured_with_3_patches": 0.7343070729694157
+    },
+    "Spark 150": {
+      "p_featured_with_1_patch": 0.11904407193216114,
+      "p_featured_with_2_patches": 0.5102576639138188,
+      "p_featured_with_3_patches": 0.7049892989044209
+    }
+  }
+}

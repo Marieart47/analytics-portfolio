@@ -1,0 +1,334 @@
+{
+  "n_control": 25815,
+  "n_treatment": 25501,
+  "true_effects": {
+    "test_active_days": 0.0276,
+    "test_revenue": 0.022,
+    "test_paid": 0.0585,
+    "test_week2_active": -0.0035,
+    "sessions_per_active_day": 0.0182,
+    "pre_payer=0|test_revenue": 0.1984,
+    "pre_payer=0|test_active_days": 0.029,
+    "pre_payer=1|test_revenue": -0.0156,
+    "pre_payer=1|test_active_days": 0.0226,
+    "engagement=low (1-3d)|test_revenue": 0.2716,
+    "engagement=low (1-3d)|test_active_days": 0.0438,
+    "engagement=mid (4-9d)|test_revenue": 0.1149,
+    "engagement=mid (4-9d)|test_active_days": 0.0352,
+    "engagement=high (10-14d)|test_revenue": -0.0079,
+    "engagement=high (10-14d)|test_active_days": 0.0218
+  },
+  "power": [
+    {
+      "metric": "test_active_days",
+      "mean": 4.0109,
+      "mde_rel": 0.0324,
+      "cuped_var_reduction": 0.5352,
+      "mde_rel_cuped": 0.0221
+    },
+    {
+      "metric": "test_revenue",
+      "mean": 3.2252,
+      "mde_rel": 0.1816,
+      "cuped_var_reduction": 0.4126,
+      "mde_rel_cuped": 0.1392
+    },
+    {
+      "metric": "test_paid",
+      "mean": 0.0662,
+      "mde_rel": 0.0932,
+      "cuped_var_reduction": NaN,
+      "mde_rel_cuped": NaN
+    },
+    {
+      "metric": "test_week2_active",
+      "mean": 0.3434,
+      "mde_rel": 0.0343,
+      "cuped_var_reduction": 0.4714,
+      "mde_rel_cuped": 0.0249
+    }
+  ],
+  "srm_p": 0.1657079062437682,
+  "results": [
+    {
+      "metric": "Active days / user",
+      "method": "t-test",
+      "rel_diff": 0.0248,
+      "rel_ci_low": 0.002,
+      "rel_ci_high": 0.0477,
+      "p_value": 0.0331,
+      "true_rel": 0.0276
+    },
+    {
+      "metric": "Active days / user",
+      "method": "CUPED (var -54%)",
+      "rel_diff": 0.0195,
+      "rel_ci_low": 0.0039,
+      "rel_ci_high": 0.035,
+      "p_value": 0.014,
+      "true_rel": 0.0276
+    },
+    {
+      "metric": "Week-2 retention",
+      "method": "t-test",
+      "rel_diff": -0.0061,
+      "rel_ci_low": -0.03,
+      "rel_ci_high": 0.0178,
+      "p_value": 0.6188,
+      "true_rel": -0.0035
+    },
+    {
+      "metric": "Week-2 retention",
+      "method": "CUPED (var -47%)",
+      "rel_diff": -0.0113,
+      "rel_ci_low": -0.0287,
+      "rel_ci_high": 0.0061,
+      "p_value": 0.2015,
+      "true_rel": -0.0035
+    },
+    {
+      "metric": "Payer conversion",
+      "method": "t-test",
+      "rel_diff": -0.0031,
+      "rel_ci_low": -0.0681,
+      "rel_ci_high": 0.0619,
+      "p_value": 0.9256,
+      "true_rel": 0.0585
+    },
+    {
+      "metric": "Payer conversion",
+      "method": "CUPED (var -22%)",
+      "rel_diff": -0.0078,
+      "rel_ci_low": -0.0651,
+      "rel_ci_high": 0.0495,
+      "p_value": 0.7896,
+      "true_rel": 0.0585
+    },
+    {
+      "metric": "Revenue / user (ARPU)",
+      "method": "t-test",
+      "rel_diff": 0.094,
+      "rel_ci_low": -0.0388,
+      "rel_ci_high": 0.2267,
+      "p_value": 0.1652,
+      "true_rel": 0.022
+    },
+    {
+      "metric": "Revenue / user (ARPU)",
+      "method": "CUPED (var -42%)",
+      "rel_diff": 0.0421,
+      "rel_ci_low": -0.0591,
+      "rel_ci_high": 0.1432,
+      "p_value": 0.4151,
+      "true_rel": 0.022
+    },
+    {
+      "metric": "Sessions / active day",
+      "method": "delta method",
+      "rel_diff": 0.0184,
+      "rel_ci_low": 0.0121,
+      "rel_ci_high": 0.0248,
+      "p_value": 0.0,
+      "true_rel": 0.0182
+    },
+    {
+      "metric": "Revenue / user (ARPU)",
+      "method": "winsorised p99.9",
+      "rel_diff": 0.0801,
+      "rel_ci_low": -0.0432,
+      "rel_ci_high": 0.2035,
+      "p_value": 0.203,
+      "true_rel": 0.022
+    }
+  ],
+  "arpu_bootstrap_ci_abs": [
+    -0.10392729339177537,
+    0.7077887091244617
+  ],
+  "dau_lift_week1": 0.03602442347027642,
+  "dau_lift_week2": 0.01009985768555377,
+  "segments": [
+    {
+      "segment": "pre_payer = 1",
+      "metric": "test_revenue",
+      "n": 5149,
+      "rel_diff": -0.0029,
+      "rel_lo": -0.113,
+      "rel_hi": 0.1072,
+      "p_value": 0.959,
+      "p_holm": 1.0,
+      "true_rel": -0.0156
+    },
+    {
+      "segment": "pre_payer = 1",
+      "metric": "test_active_days",
+      "n": 5149,
+      "rel_diff": 0.0141,
+      "rel_lo": -0.0104,
+      "rel_hi": 0.0387,
+      "p_value": 0.2591,
+      "p_holm": 0.7774,
+      "true_rel": 0.0226
+    },
+    {
+      "segment": "pre_payer = 0",
+      "metric": "test_revenue",
+      "n": 46167,
+      "rel_diff": 0.2474,
+      "rel_lo": 0.0025,
+      "rel_hi": 0.4922,
+      "p_value": 0.0477,
+      "p_holm": 0.3341,
+      "true_rel": 0.1984
+    },
+    {
+      "segment": "pre_payer = 0",
+      "metric": "test_active_days",
+      "n": 46167,
+      "rel_diff": 0.0216,
+      "rel_lo": 0.003,
+      "rel_hi": 0.0402,
+      "p_value": 0.0226,
+      "p_holm": 0.1128,
+      "true_rel": 0.029
+    },
+    {
+      "segment": "engagement = mid (4-9d)",
+      "metric": "test_revenue",
+      "n": 11627,
+      "rel_diff": 0.2987,
+      "rel_lo": -0.0379,
+      "rel_hi": 0.6354,
+      "p_value": 0.082,
+      "p_holm": 0.4921,
+      "true_rel": 0.1149
+    },
+    {
+      "segment": "engagement = mid (4-9d)",
+      "metric": "test_active_days",
+      "n": 11627,
+      "rel_diff": 0.0436,
+      "rel_lo": 0.0034,
+      "rel_hi": 0.0839,
+      "p_value": 0.0337,
+      "p_holm": 0.1348,
+      "true_rel": 0.0352
+    },
+    {
+      "segment": "engagement = high (10-14d)",
+      "metric": "test_revenue",
+      "n": 13384,
+      "rel_diff": 0.0075,
+      "rel_lo": -0.0964,
+      "rel_hi": 0.1113,
+      "p_value": 0.8882,
+      "p_holm": 1.0,
+      "true_rel": -0.0079
+    },
+    {
+      "segment": "engagement = high (10-14d)",
+      "metric": "test_active_days",
+      "n": 13384,
+      "rel_diff": 0.0177,
+      "rel_lo": 0.0044,
+      "rel_hi": 0.031,
+      "p_value": 0.0091,
+      "p_holm": 0.0637,
+      "true_rel": 0.0218
+    },
+    {
+      "segment": "engagement = low (1-3d)",
+      "metric": "test_revenue",
+      "n": 26305,
+      "rel_diff": -0.0441,
+      "rel_lo": -0.5283,
+      "rel_hi": 0.4401,
+      "p_value": 0.8583,
+      "p_holm": 1.0,
+      "true_rel": 0.2716
+    },
+    {
+      "segment": "engagement = low (1-3d)",
+      "metric": "test_active_days",
+      "n": 26305,
+      "rel_diff": -0.0219,
+      "rel_lo": -0.0939,
+      "rel_hi": 0.05,
+      "p_value": 0.5498,
+      "p_holm": 0.9565,
+      "true_rel": 0.0438
+    },
+    {
+      "segment": "platform = ios",
+      "metric": "test_revenue",
+      "n": 20604,
+      "rel_diff": 0.031,
+      "rel_lo": -0.1042,
+      "rel_hi": 0.1662,
+      "p_value": 0.6531,
+      "p_holm": 1.0,
+      "true_rel": NaN
+    },
+    {
+      "segment": "platform = ios",
+      "metric": "test_active_days",
+      "n": 20604,
+      "rel_diff": 0.0088,
+      "rel_lo": -0.0156,
+      "rel_hi": 0.0333,
+      "p_value": 0.4782,
+      "p_holm": 0.9565,
+      "true_rel": NaN
+    },
+    {
+      "segment": "platform = android",
+      "metric": "test_revenue",
+      "n": 30712,
+      "rel_diff": 0.0631,
+      "rel_lo": -0.0875,
+      "rel_hi": 0.2136,
+      "p_value": 0.4116,
+      "p_holm": 1.0,
+      "true_rel": NaN
+    },
+    {
+      "segment": "platform = android",
+      "metric": "test_active_days",
+      "n": 30712,
+      "rel_diff": 0.0266,
+      "rel_lo": 0.0065,
+      "rel_hi": 0.0467,
+      "p_value": 0.0096,
+      "p_holm": 0.0637,
+      "true_rel": NaN
+    }
+  ],
+  "aa_false_positive_rate": {
+    "naive_session_level": 0.176,
+    "delta_method": 0.048,
+    "peeking_daily": 0.099,
+    "fixed_horizon": 0.052
+  },
+  "srm_bug": {
+    "n_control": 11281,
+    "n_treatment": 10808,
+    "srm_p": 0.0014599214810228904,
+    "lift_with_bug": 0.051526003626822345,
+    "lift_without_bug_same_population": 0.022350414106647544,
+    "lift_itt": 0.024847268530726618,
+    "true_itt": 0.02761057184514154
+  },
+  "decision": {
+    "eligible_players": 51316,
+    "arpu_lift_14d_abs": 0.13566546660242018,
+    "arpu_lift_ci": [
+      -0.1905943816083598,
+      0.46192531481320015
+    ],
+    "monthly_revenue_impact": 14918.162323220986,
+    "monthly_ci": [
+      -20958.302757031266,
+      50794.62740347324
+    ]
+  }
+}

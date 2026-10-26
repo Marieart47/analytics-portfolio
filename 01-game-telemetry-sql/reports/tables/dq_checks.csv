@@ -1,0 +1,11 @@
+check,clean_data,defect_injected_data
+duplicate transaction ids,0,82
+"duplicated purchase rows (same player, day, sku, price) beyond a plausible repeat rate",0,0
+purchases before install,0,200
+activity before install,0,0
+orphan events (player not in installs table),0,150
+purchases on days without a session,0,200
+non-positive or unknown price points,0,50
+installs missing from tutorial_start,0,180
+funnel monotonicity violations (later step without earlier step),0,165
+implausible session counts (> 50 per day),0,0
